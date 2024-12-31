@@ -7,6 +7,6 @@ node {
   }
   stage('Seed Jenkins') {
     jobDsl targets: 'jobs/src/main/groovy/definitions/**/*.groovy',
-    additionalClasspath: 'jobs/build/libs','jobs/build/libs/*.jar'
+    additionalClasspath: 'jobs/build/libs/*.jar'
   }
 }
